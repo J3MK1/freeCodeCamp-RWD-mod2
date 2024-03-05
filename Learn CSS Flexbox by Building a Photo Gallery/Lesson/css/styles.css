@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    background-color: blue;
+    color: white;
+    border-bottom: 10px solid yellow;
+}
+
+body{
+    margin:0;
+}
+
+.gallery img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.gallery {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery::after{
+    content: "";
+    width: 350px;
+}
