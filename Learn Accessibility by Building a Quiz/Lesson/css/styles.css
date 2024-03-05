@@ -1,0 +1,160 @@
+@media (prefers-reduced-motion: no-preference) {
+    *{
+        scroll-behavior: smooth;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana;
+}
+
+header img{
+    width: 200px;
+    aspect-ratio: 24/2;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: min(4vw, 2em);
+}
+
+#info {
+    padding-top: 20px;
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(21, 21, 107);
+    color: rgb(255, 208, 0);
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+header a:hover{
+    color:rgb(21, 21, 107);
+    background-color: white;
+    cursor: pointer;
+}
+
+.mandatory {
+    color: rgb(221, 0, 0);
+    font-size: 12px;
+}
+
+.link {
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: 12px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+form {
+    margin: 30px;
+}
+
+.divider {
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+    margin-bottom: 15px;;
+}
+
+.answers-list {
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+.block {
+    display: block;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+#info input {
+    width: 15rem;
+    max-width: 90%;
+}
+
+select {
+    font-size: 14px;
+}
+
+.submit {
+    display: block;
+    margin: 40px auto;
+    width: 20%;
+    height: 40px;
+    border: 2px solid rgb(21, 21, 107);
+    font-size: 16px;
+}
+
+.sr-only {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+footer {
+    background-color: rgb(12, 12, 43);
+    height: 120px;
+    text-align: center;
+    padding: 10px;
+}
+
+address,
+address a {
+    color: white;
+}

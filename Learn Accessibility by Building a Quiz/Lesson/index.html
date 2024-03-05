@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="device=device-witdth, initial-scale=1.0"/>
+        <meta name="description" content="Accessibility Quiz"/>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Accessibility Quiz</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="logo">
+            <h1>Welcome to this Quiz!</h1>
+            <nav class="link">
+                <ul>
+                    <li><a href="#info">Info</a></li>
+                    <li><a href="#first-quiz">Quiz 1</a></li>
+                    <li><a href="#second-quiz">Quiz 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form method="post" action="test.com">
+            <section role="region" id="info" aria-labelledby="info">
+                <h2 id="info">User Info</h2>
+                <div class="divider"></div>
+                <label for="user-name">
+                Name:<span class="mandatory">*</span>
+                    <input type="text" id="user-name" name="user-name" required/>
+                </label>
+                <label for="user-email">
+                    E-mail:<span class="mandatory">*</span>
+                    <input type="email" id="user-email" name="user-email" required/>
+                </label>
+                <label>
+                    D.O.B:<span class="mandatory">*</span><span class="sr-only">Date of Birth</span>
+                    <input type="date" id="user-birth" name="user-birth" required>
+                </label>
+            </section>
+            <section role="region" aria-labelleby="first-quiz">
+                <h2 id="first-quiz">Quiz 1</h2>
+                <div class="divider"></div>
+                <p>Question #2:</p>
+                <fieldset name="first-quiz-question-one">
+                    <legend>Description of the question.</legend>
+                    <ul class="answers-list">
+                        <li>
+                            <label for="q1-a1">
+                                <input type="radio" id="q1-a1" name="q1"> True
+                            </label>
+                        </li>
+                        <li>
+                            <label for="q1-a2">
+                                <input type="radio" id="q1-a2" name="q1"> False
+                            </label>
+                        </li>
+                    </fieldset>
+                    <p>Question #2:</p>
+                    <fieldset name="first-quiz-question-two">
+                        <legend>Description of the question.</legend>
+                        <ul class="answers-list">
+                            <li>
+                            <label for="q2-a1">
+                                <input type="radio" id="q2-a1" name="q2"> True
+                            </label>
+                            </li>
+                            <li>
+                            <label for="q2-a2">
+                            <input type="radio" id="q2-a2" name="q2"> False
+                        </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+            <section role="region" aria-labelledby="second-quiz">
+                <h2 id="second-quiz">Quiz 2</h2>
+                <div class="divider"></div>
+                <label for="selection">
+                    Question 1:
+                    <select class="block" id="selection" name="selection">
+                        <option value="">[select one]</option>
+                        <option value="1">Answer 1</option>
+                        <option value="2">Answer 2</option>
+                    </select>
+                </label>
+                <label for="feedback">
+                    Feedback: <textarea cols="30" rows="5"class="block" id="feedback" name="feedback" placeholder="More questions..."></textarea>
+                </label>
+            </section>
+            <input class="submit" type="submit" keyshortcuts="s" value="Send"/>
+        </form>
+    </body>
+    <footer>
+        <address>
+            <span><a href="freecodecamp.com">freeCodeCamp</a></span>
+            <span>San Francisco</span>
+            <span>California</span>
+            <span>USA</span>
+        </address>
+    </footer>
+</html>
